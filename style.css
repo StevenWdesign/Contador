@@ -1,0 +1,103 @@
+/*nuevo: responsive para todo los dispositivos predefinidos del edge y mi celular xd*/
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: #3e6993;
+  display: flex;
+  justify-content: center;
+}
+
+noscript {
+  font-size: 2em;
+  color: #36438b;
+}
+
+.contador {
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  width: 40vw;
+  position: relative;
+  top: 25vh;
+  border-radius: 0.3em;
+  justify-content: space-around;
+}
+
+.title,
+.valor {
+  font-size: 3.5em;
+  font-weight: 600;
+  color: #36438b;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  align-self: center;
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+
+.btn-increm,
+.btn-decrem {
+  width: 35%;
+  height: 100%;
+  border-radius: 0.2em;
+  font-size: 2em;
+  text-transform: capitalize;
+  border-style: none;
+  background-color: #fcfcfc;
+  color: #36438b;
+}
+
+.btn-res {
+  width: 29%;
+  height: 100%;
+  border-radius: 0.2em;
+  font-size: 2em;
+  text-transform: capitalize;
+  border-style: none;
+  background-color: #fcfcfc;
+  color: #36438b;
+  margin: 0 0.2em;
+}
+
+@media screen and (min-width: 300px) and (max-width: 399px) {
+  .contador {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 299px) {
+  .contador {
+    width: 100%;
+  }
+  .title,
+  .valor {
+    font-size: 2.2em;
+  }
+  .btn-decrem,
+  .btn-increm,
+  .btn-res {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 540px) {
+  .contador {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 912px) {
+  .contador {
+    width: 70vw;
+  }
+}
